@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard Plotly - Tâches et Employés</title>
+
+    <!-- Charger Plotly d'abord -->
+    <script src="https://cdn.plot.ly/plotly-5.9.1.min.js"></script>
+
+    <!-- Charger PapaParse ensuite -->
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.2/papaparse.min.js"></script>
+</head>
+
+<body>
+    <h1>Dashboard des Tâches</h1>
+    <p>Assure-toi que les deux fichiers CSV sont chargés :</p>
+    <input type="file" id="employeeCSV" accept=".csv"> (employee.csv)<br>
+    <input type="file" id="tachesCSV" accept=".csv"> (taches.csv)<br><br>
+    <button id="generateBtn">Générer le Dashboard</button>
+
+    <div id="barChart"></div>
+    <div id="pieChart"></div>
+
+    <!-- Charger ton script personnalisé après Plotly et PapaParse -->
+    <script src="script.js"></script>
+</body>
+
+</html>
